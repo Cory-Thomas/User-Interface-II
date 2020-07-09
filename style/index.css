@@ -42,6 +42,12 @@ nav a {
     width: 100px;
     text-align: center;
     border: 2px solid black;
+    color: black;
+}
+
+nav a:nth-child(1) {
+    background-color: black;
+    color: white;
 }
 
 .header-bgImage {
@@ -61,13 +67,97 @@ h2 {
     font-size: 4.8rem;
 }
 
-button {
+a.button {
     border: 2px solid black;
-    padding: 1%;
-    width: 125px;
+    padding: .8%;
+    width: 135px;
+    text-align: center;
+    background-color: white;
 }
 
-main {
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3%;
+    background-color: grey;
+}
+
+footer img {
+    width: 75px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 108%;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 4000px) {
+    main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h2 {
+    color: black;
+}
+
+div {
+    margin: 1%;
+}
+
+main div img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border: 3px solid black;
+}
+
+h3 {
+    text-align: center;
+}
+}
+
+@media only screen and (max-width: 1750px) {
+    main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div {
+    margin: 1%;
+}
+
+h2 {
+    color: white;
+}
+
+main div img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border: 3px solid black;
+}
+
+h3 {
+    text-align: center;
+}
+}
+
+@media only screen and (max-width: 1300px) {
+    main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -81,20 +171,10 @@ main div img {
     width: 300px;
     height: 300px;
     object-fit: cover;
+    border: 3px solid black;
 }
 
 h3 {
     text-align: center;
 }
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3%;
-    background-color: grey;
-}
-
-a {
-    text-decoration: none;
 }
