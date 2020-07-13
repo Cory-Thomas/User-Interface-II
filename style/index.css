@@ -73,12 +73,13 @@ h2 {
 }
 
 div {
-    margin: 1%;
+    margin: 3%;
+    width: 25%;
 }
 
 main div img {
-    width: 500px;
-    height: 500px;
+   /* width: 500px;
+    height: 500px;*/
     object-fit: cover;
     border: 3px solid black;
 }
@@ -121,7 +122,40 @@ a:hover {
 }
 
 @media (max-width: 800px) {
-   
+    .header-nav, .header-nav nav  {
+        flex-direction: column;
+    }
+
+    .header-nav h1 {
+        font-size: 4.8rem;
+    }
+
+    .header-nav nav {
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 2.4rem;
+        width: 150px;
+    }
+
+    .header-bgImage {
+        background-position: center;
+        margin-top: 5%;
+    }
+
+    main {
+        width: 95%;
+        margin: 8% auto;
+    }
+
+    main div {
+        width: 44%;
+    }
+
+    main div img {
+        width: 100%;
+    }
 
 
 }
@@ -155,11 +189,10 @@ a:hover {
     }
 
     main div {
-        margin-top: 5%;
+        width: 44%;
     }
 
     main div img {
-        width: 200px;
-        height: 200px;
+        width: 100%;
     }
 }
