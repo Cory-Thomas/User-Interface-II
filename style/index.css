@@ -62,6 +62,31 @@ nav a:nth-child(1) {
     align-items: center;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h2 {
+    color: black;
+}
+
+div {
+    margin: 1%;
+}
+
+main div img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border: 3px solid black;
+}
+
+h3 {
+    text-align: center;
+}
+
 h2 {
     color: white;
     font-size: 4.8rem;
@@ -95,86 +120,46 @@ a:hover {
     font-size: 108%;
 }
 
+@media (max-width: 800px) {
+   
 
 
+}
 
+@media (max-width: 500px) {
+    .header-nav, .header-nav nav  {
+        flex-direction: column;
+    }
 
+    .header-nav h1 {
+        font-size: 4.8rem;
+    }
 
+    .header-nav nav {
+        align-items: center;
+    }
 
+    nav a {
+        font-size: 2.4rem;
+        width: 150px;
+    }
 
-@media only screen and (max-width: 4000px) {
+    .header-bgImage {
+        background-position: center;
+        margin-top: 5%;
+    }
+
     main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+        width: 90%;
+        margin: 8% auto;
+    }
 
-h2 {
-    color: black;
-}
+    main div {
+        margin-top: 5%;
+    }
 
-div {
-    margin: 1%;
-}
-
-main div img {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    border: 3px solid black;
-}
-
-h3 {
-    text-align: center;
-}
-}
-
-@media only screen and (max-width: 1750px) {
-    main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-div {
-    margin: 1%;
-}
-
-h2 {
-    color: white;
-}
-
-main div img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    border: 3px solid black;
-}
-
-h3 {
-    text-align: center;
-}
-}
-
-@media only screen and (max-width: 1300px) {
-    main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-div {
-    margin: 1%;
-}
-
-main div img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border: 3px solid black;
-}
-
-h3 {
-    text-align: center;
-}
+    main div img {
+        width: 200px;
+        height: 200px;
+    }
 }
